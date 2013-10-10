@@ -25,6 +25,12 @@ def get_type(filename):
         return 'text/css'
     if filename.endswith('html'):
         return 'text/html'
+    if filename.endswith('png'):
+        return 'image/png'
+    if filename.endswith('jpg'):
+        return 'image/jpeg'
+    if filename.endswith('gif'):
+        return 'image/gif'
 
 def application(environ, start_response):
     response = ''
