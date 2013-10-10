@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Xornadas de Introducción a GNU/Linux e Software Libre 2013</title>
+	<meta name="viewport" content="width=1024" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta charset="utf-8" />
+	<link href='http://fonts.googleapis.com/css?family=Gabriela|Sintony:700,400' rel='stylesheet' type='text/css'>
+
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+	<link rel="stylesheet" href="reveal.js/css/reveal.min.css" />
+	<link rel="stylesheet" href="css/style.css" id="theme" />
+
+	<!-- For syntax highlighting -->
+	<link rel="stylesheet" href="reveal.js/lib/css/zenburn.css" />
+
+	<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+	<script>
+		document.write( '<link rel="stylesheet" href="reveal.js/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+	</script>
+
+	<!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class="reveal">
+		<div class="slides">
+
+		<section id="portada">
+			<!-- Fill here -->
+			<h2>Introducción a</h2>
+			<h1 style="font-size:3.5em"><em>GNU</em>/<em>Linux</em></h1>
+			<h2>e ao <em>Software Libre</em></h2>
+
+			<footer>Para as xornadas introductorias de GPUL.<br />
+				Presenta: Santiago Saavedra (@ssice)</footer>
+
+		</section>
+
+		<section>
+			<section>
+				<h2>Que é o <em>Software Libre</em>?</h2>
+				<h3 class="fragment">Un momento...</h3>
+			</section>
+
+			<section>
+				<h2>Que é o <em>Software</em>?</h2>
+
+				<ul>
+					<li>Programas</li>
+					<li>Comandos</li>
+					<li>Utilidades</li>
+				</ul>
+				<br /><br />
+				
+				<p>Todo o que non é <em>Hardware</em>.</p>
+
+			</section>
+
+			<section>
+				<h2>Como se fai Software?</h2>
+				<aside class="notes">
+					Xa sabemos como se fai hardware, máis ou menos:
+					cóllenese enxeñeiros eléctricos e físicos, deséñanse circuitos, imprímense e mecanízanse, pero e o software?
+				</aside>
+
+				Ídelo ver e realizar nos próximos anos.<br /><br />
+
+				<ul>
+					<li class="fragment">Escríbese <em class="fragment">código fonte</em> nalgunha <em>linguaxe de programación</em> <span style="font-size: 0.8em"><br />(que típicamente non é Pascal)</span></li>
+					<li class="fragment">Un compilador (e un enlazador) conséguennos un <em class="fragment">ficheiro executable</em></li>
+					<li class="fragment">O ficheiro executable é comprendido pola máquina</li>
+
+				</ul>
+
+			</section>
+
+		</section>
+
+<!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
+<!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
+
+		<section>
+			<section>
+				<h2>Que é o <em>Software Libre</em>?</h2>
+				
+				Libre de <em>liberdade</em>.
+				
+				<ol>
+					<li class="fragment">Uso con calquera finalidade</li>
+					<li class="fragment">Estudo e modificación. Acceso á fonte (open source).</li>
+					<li class="fragment">Distribuir copias</li>
+					<li class="fragment">Modificar o programa e distribuir as modificacións</li>
+				</ol>
+			</section>
+
+		</section>
+
+<!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
+<!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
+
+		<section>
+			<section>
+				<h2>Qué é <em>GNU</em>?</h2>
+				<h3 class="fragment"><em>G</em>NU is <em>N</em>ot <em>U</em>nix</h3>
+
+				<aside class="notes">Un proyecto para realizar Software Libre, co obxectivo de crear un sistema operativo completamente libre: o Sistema GNU.</aside>
+
+				<div class="fragment">
+					<img src="stallman.jpg" /><br />
+					<p style="font-size: 0.4em">Fuente: <a href="http://commons.wikimedia.org/wiki/File:Richard_Stallman_2005_%28chrys%29.jpg">Wikimedia Commons</a></p>
+					<p>Richard M. Stallman</p>
+				</div>
+			</section>
+		</section>
+
+		<section>
+			<section>
+				<h2>Qué é <em>Linux</em>?</h2>
+
+				<aside class="notes">Un kernel libre para formar un sistema operativo.</aside>
+
+				<div class="fragment">
+					<img src="torvalds.jpg" style="width: 280px" /><br />
+					<p style="font-size: 0.4em">Fuente: <a href="http://commons.wikimedia.org/wiki/File:Linus_Torvalds.jpeg">Wikimedia Commons</a></p>
+					<p>Linus Torvalds</p>
+				</div>
+			</section>
+
+		</section>
+
+		<section>
+			<h2><em class="fragment">GNU</em>/<em class="fragment">Linux</em></h2>
+
+			<div class="fragment">
+				<p>Un Sistema Operativo <em>libre</em>.</p>
+				<p>Mezcla de: Núcleo libre + programas software (similares a Unix pero) libres.</p>
+			</div>
+		</section>
+
+		<section>
+			<section>
+				<h2>Hardcore Linux</h2>
+			</section>
+
+			<section>
+				<h2>Só hai unha versión de <em>GNU/Linux</em>?</h2>
+				<p>No.</p>
+				<p>Distribucións (<em>distros</em>)</p>
+				<ul>
+					<li>Fedora</li>
+					<li>Ubuntu</li>
+					<li>Debian</li>
+					<li>Arch Linux</li>
+					<li>...</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Como se instala software?</h2>
+				
+				<h3><em>Repositorios</em></h3>
+				<p>A comunidade Linux inventou as <em>App Stores</em> como 15 anos antes ca Apple.</p>
+
+				<p>Os xestores de paquetes dependen da distro</p>
+				<p>En Ubuntu: Synaptic e <code>apt</code> (<code>apt-get</code>, <code>apt-cache</code>, …)</p>
+
+				<aside class="notes">
+					Tamén se pode instalar software dende ficheiros empaquetados.
+				</aside>
+			</section>
+
+			<section>
+				<h2>O sistema de ficheiros</h2>
+				<p>Similar ao resto de sistemas <em>Unix</em> (Mac OS, *BSD, ...)</p>
+
+				<ul>
+					<li>Sistema xerárquico</li>
+					<li>Divisor: <code>/</code></li>
+					<li>Exemplo: <code style="font-size:0.8em"><strong>/</strong>home/<i>ssaavedra</i>/gpul/gpul.html</code></li>
+					<li>Hai un estándar: <a href="http://www.pathname.com/fhs/">HFS</a></li>
+					<li>Permisos sinxelos</li>
+				</ul>
+
+			</section>
+
+			<section>
+				<h2><em>Shell</em></h2>
+				<h3><em>WTF</em> is a shell?</h3>
+
+				<p>Intérprete de comandos</p>
+				<ul>
+					<li>sh</li>
+					<li>bash</li>
+					<li>zsh</li>
+					<li>dash</li>
+				</ul>
+
+			</section>
+
+			<section>
+				<h2>Comandos</h2>
+
+				<p><a href="http://security.crudtastic.com/wp-content/uploads/2010/09/linux-command-wallpaper.png">Hai unha lista deles aquí</a></p>
+
+				<p>Demo time</p>
+
+				<aside class="notes">
+					<h2>Comandos a mencionar</h2>
+
+					<h3>Importante: falar do <strong style="font-size: 4em">&amp;</strong></h3>
+
+					<ul>
+						<li>ls</li>
+						<li>find</li>
+						<li>locate</li>
+						<li>file</li>
+						<li>cat</li>
+						<li>tee</li>
+						<li>grep</li>
+						<li>touch</li>
+						<li>mkdir</li>
+						<li>mv</li>
+						<li>cp</li>
+						<li>rm</li>
+						<li>cd</li>
+						<li>pwd</li>
+						<li>diff</li>
+						<li>
+							<h3>Manexar procesos</h3>
+							<ul>
+								<li>ps [-elFyyy]</li>
+								<li>kill</li>
+								<li>killall</li>
+								<li>pkill</li>
+							</ul>
+						</li>
+						<li>chmod</li>
+						<li>screen</li>
+						<li>less</li>
+						<li>head</li>
+						<li>tail</li>
+						<li>ssh</li>
+						<li>wget / curl</li>
+						<li>tar / gzip</li>
+						<li>su / sudo</li>
+					</ul>
+				</aside>
+
+			</section>
+
+			<section>
+				<h2>Fluxos</h2>
+				<dl>
+					<dt><em>></em><i>ficheiro</i></dt>
+					<dd>Redirixe <em>saída</em> a un ficheiro <em>borrándoo se existía</em><br /></dd>
+<hr />
+					<dt><em>&lt;</em><i>ficheiro</i></dt>
+					<dd>Redirixe <em>entrada</em> a un ficheiro</dd>
+<hr />
+					<dt><em>&lt;&lt;EOF</em></dt>
+					<dd>Dirixe á entrada estándar un "documento" (DEMO)</dd>
+<hr />
+					<dt><em>>></em><i>ficheiro</i></dt>
+					<dd>Redirixe <em>saída</em> a un ficheiro <em>sen borralo</em></dd>
+				</dl>
+			</section>
+
+			<section>
+				<h2>Pipe</h2>
+				<p>É tan importante que hai unha diapositiva só para isto.</p>
+
+				<aside class="notes">
+					Esto saíu de: <a href="http://www.leancrew.com/all-this/2011/12/more-shell-less-egg/">aquí</a>
+					<br />
+
+				Read a file of text, determine the n most frequently used words, and print out a sorted list of those words along with their frequencies.
+				</aside>
+
+				<pre><code>
+					 tr -cs A-Za-z '\n' | tr A-Z a-z |        \
+					 sort | uniq -c | sort -rn | sed ${1}q
+				</code></pre>
+
+			</section>
+	</section>
+
+
+<!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
+<!-- - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - ✂ - -->
+
+	<section>
+
+		<section>
+			<h2>NEED HEEEEELP!!!1</h2>
+			<h3>Como buscar axuda</h3>
+
+			<dl>
+				<dt>Para comandos:</dt>
+				<dd><ul>
+					<li><code>man -k</code> / <code>apropos</code></li>
+					<li><code>man</code></li>
+				</ul></dd>
+
+				<dt>En xeral</dt>
+				<dd><ul>
+					<li>Wikis (<a href="http://wiki.archlinux.org">wiki.archlinux.org</a>, <a href="http://wiki.gentoo.org">wiki.gentoo.org</a>)</li>
+					<li>Os foros de Ubuntu ;)</li>
+					<li><a href="http://stackoverflow.com/">StackOverflow</a> et al. (<a href="http://unix.stackexchange.com/">Unix</a>/<a href="http://superuser.com/">SuperUser</a>/<a href="http://ubuntu.stackexchange.com/">Ubuntu</a>)</li>
+					<li>Listas de GPUL</li>
+					<li>IRC (<code><a href="irc://irc.freenode.org:6667/#gpul">irc.freenode.org #gpul</a></code>)</li>
+				</ul></dd>
+			</dl>
+
+		</section>
+
+
+		<section>
+			<h2><em>Rogos</em> e <em>Preguntas</em></h2>
+			<div class="fragment roll-in">
+				<h2>Grazas por vir</h2>
+
+				<img style="width:400px" src="pastar.png" />
+			</div>
+		</section>
+
+	</div>
+
+</div>
+
+<footer class="authors">
+	<div style="position:absolute; right: 45px; bottom: 45px;">
+
+	<div style="float:right">
+		<img src="img/logo_gpulnuevo.svg" width="100" height="100" />
+	</div>
+	<ul style="clear:both; color: #666">
+		<li>Santiago Saavedra López <a class="tw_cuenta" href="http://twitter.com/ssice" style="color: #996">(@ssice)</a> </li>
+	</ul>
+</div>
+</footer>
+
+	<script src="reveal.js/lib/js/head.min.js"></script>
+	<script src="reveal.js/js/reveal.min.js"></script>
+
+	<script>
+
+		window.addEventListener('load', function() {
+		var s = document.getElementsByClassName('demo');
+		console.log(s)
+		s = Array.prototype.slice.call(s, 0);
+		s.forEach(function(obj) {
+			var e = document.createElement('div');
+			e.className = "fragment demo-fragment"
+			e.innerHTML = "DEMO"
+			console.log(obj)
+			obj.appendChild(e)
+		})}, false);
+
+		// Full list of configuration options available here:
+		// https://github.com/hakimel/reveal.js#configuration
+		Reveal.initialize({
+			controls: false,
+			progress: true,
+			history: true,
+			center: true,
+
+			width: 800,
+			height: 600,
+			margin: 0.05,
+			minScale: 0.5,
+			maxScale: 1,
+
+			theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+			transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+			// Optional libraries used to extend on reveal.js
+			dependencies: [
+				{ src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+				{ src: 'reveal.js/plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+				{ src: 'reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+				{ src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+				// { src: '/socket.io/socket.io.js', async: true },
+				// { src: 'notes-server/client.js', async: true },
+				// { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+				{ src: 'remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+		]
+		});
+
+	</script>
+
+</body>
+</html>
+
