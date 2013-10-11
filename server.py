@@ -31,6 +31,8 @@ def get_type(filename):
         return 'image/jpeg'
     if filename.endswith('gif'):
         return 'image/gif'
+    if filename.endswith('svg'):
+        return 'image/svg+xml'
 
 def application(environ, start_response):
     response = ''
