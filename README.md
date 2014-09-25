@@ -1,4 +1,4 @@
-Xornadas de Intro. a GNU/Linux e S.L.
+Xornadas de Intro. a GNU/Linux e Sw.L.
 =====================================
 
 Estas diapositivas foron feitas coa axuda do reveal.js de hakimel.
